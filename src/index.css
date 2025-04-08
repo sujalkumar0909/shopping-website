@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f8fc;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e90ff;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+nav a, .logout-btn {
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  padding: 0.75rem 1.5rem;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
+  margin: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.detail-card img {
+  width: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.cart-page {
+  padding: 1rem;
+}
+
+.cart-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.confirmation {
+  margin-top: 1rem;
+  color: green;
+}
+
+.back-btn {
+  margin: 1rem;
+  background: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.added-msg {
+  color: green;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .detail-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
